@@ -1,0 +1,7 @@
+#If songs.db contains the top 100 songs of one listener from 2018, how would you characterize their audio aura?
+Since the audio aura is determined by the average of energy ,valence and danceability.I will first qurery the data of these factors.
+And the AVG(energy) is  0.65906 , AVG(valence) is 0.484443 and AVG(danceability) is  0.71646.
+As we can see the this user prefer more danceable ,energetic song and less sad songs
+
+#Hypothesize about why the way you’ve calculated this aura might not be very representative of the listener. What better ways of calculating this aura would you propose?
+We might need more data for example the times each songs the user played ,the duration of total played time of each songs.
