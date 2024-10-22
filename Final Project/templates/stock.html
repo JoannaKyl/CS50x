@@ -1,0 +1,40 @@
+{% extends "index.html"%}
+
+{% block title %} Stock {% endblock %}
+
+
+{% block content %}
+
+<div class="all-form">
+  <form action="/stock" method="post">
+
+
+      <div class="all-form">
+      <label>Symbol:</label>
+      <input type="text" class="info" id= "symbol" name="symbol" placeholder="Symbol" required/>
+      </div>
+
+
+      <div class="all-form" >
+
+
+
+          <label>Shares:</label>
+         <input type="number" class="info" id="shares" name="shares" min="1" placeholder="Shares" required>
+        </div>
+
+        <div class="all-form">
+          <label>Amount:</label>
+         <input type="number" class="info" id="amount" name="amount"  min="1" placeholder="Amount" required step="0.01">
+        </div>
+
+      <div class="all-form">
+      <button type="submit" class="info" id="Save" name="Save">Buy</button>
+    </div>
+
+  </form>
+</div>
+
+
+
+{% endblock %}

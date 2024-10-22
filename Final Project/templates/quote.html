@@ -1,0 +1,32 @@
+{% extends "index.html"%}
+
+{% block title %} quote {% endblock %}
+
+
+{% block content %}
+
+<div class="all-form">
+ <form action="/quote" method="post">
+
+    <div div class="all-form">
+    <label >Asset :</label>
+    <select class="asset id="asset_type" name="asset" id="asset">
+    <option class="asset" id="asset_type" name="asset" value="asset" selected >Asste Type</option>
+      <option class="asset" id="asset_type" name="asset" value="Stock">Stock</option>
+      <option class="asset" id="asset_type" name="asset" value="Crypto">Crypto</option>
+    </select>
+    </div>
+
+     <div class="all-form">
+         <label>Symbol:</label>
+        <input type="text" class="info" id="symbol" name="symbol" placeholder="Symbol" required>
+       </div>
+
+     <div class="all-form">
+     <button type="submit" class="info" id="quote" name="quote">Quote</button>
+   </div>
+
+ </form>
+</div>
+
+{% endblock %}

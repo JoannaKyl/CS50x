@@ -1,0 +1,32 @@
+{% extends "index.html"%}
+
+{% block title %} Login {% endblock %}
+
+
+{% block content %}
+
+    <div class="all-form">
+      <form action="/login" method="POST">
+
+
+          <div class="all-form">
+          <label>Enter your Email:</label>
+          <input type="email" class="info" id= "username" name="email" placeholder="Email" required/>
+          </div>
+
+          <div class="all-form">
+            <label>Enter your Password:</label>
+           <input type="password" class="info" id="password" name="password" minlength="8" placeholder="Password" required>
+          </div>
+
+
+          <div class="all-form">
+          <button type="submit" class="info" id="create-ac" name="create-ac">Login</button>
+        </div>
+
+      </form>
+    </div>
+
+
+
+{% endblock %}

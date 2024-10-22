@@ -1,0 +1,104 @@
+{% extends "index.html"%}
+
+{% block title %} Portfolio {% endblock %}
+
+
+{% block content %}
+<body>
+    <div class="all-form">
+        <form action="/portfolio" method="post">
+
+            <div class="arranged_table">
+                <fieldset>
+                    <h2>Income</h2>
+                    <p>Your income history</p>
+
+                    <table>
+                        <tr>
+                            <th>Month</th>
+                            <th>Income(USD$)</th>
+                        </tr>
+                        {% for income in incomes %}
+                        <tr>
+
+                                <td>{{income.month}}</td>
+                                <td>{{income.total_income}}</td>
+
+                        </tr>
+                        {% endfor %}
+
+                    </table>
+
+                </fieldset>
+                <fieldset>
+                    <h2>Saving</h2>
+                    <p>Your saving details.</p>
+
+                    <table>
+                        <tr>
+
+                            <th>Month</th>
+                            <th>Saving(USD$)</th>
+                        </tr>
+                        {% for saving in savings %}
+                        <tr>
+
+                                <td>{{saving.month}}</td>
+                                <td>{{saving.total_saving}}</td>
+
+                        </tr>
+                        {% endfor %}
+                    </table>
+                </fieldset>
+
+                <fieldset>
+                    <h2>Stock </h2>
+                    <p>Your portfolio in stock.</p>
+
+
+                    <table>
+                        <tr>
+
+                            <th>Symbol</th>
+                            <th>Quantities</th>
+                            <th>Invested Amount</th>
+                        </tr>
+                        {% for stock in stocks %}
+                        <tr>
+
+                                <td>{{stock.symbol}}</td>
+                                <td>{{stock.total_shares}}</td>
+                                <td>${{stock.total_amount}}</td>
+
+                        </tr>
+                        {% endfor %}
+                    </table>
+                </fieldset>
+
+                <fieldset>
+                    <h2>Crypto </h2>
+                    <p>Your portfolio in Crypto.</p>
+
+
+                    <table>
+                        <tr>
+                            <th>Symbol</th>
+                            <th>Quantities</th>
+                            <th>Invested Amount</th>
+                        </tr>
+
+                        {% for coin in coins %}
+                        <tr>
+
+                                <td>{{coin.Coin_symbol}}</td>
+                                <td>{{coin.total_quantities}}</td>
+                                <td>{{coin.total_amount}}</td>
+
+                        </tr>
+                        {% endfor %}
+                    </table>
+                </fieldset>
+            </div>
+
+        </body>
+{% endblock %}

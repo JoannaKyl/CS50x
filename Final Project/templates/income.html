@@ -1,0 +1,28 @@
+{% extends "index.html"%}
+
+{% block title %} Income {% endblock %}
+
+
+{% block content %}
+
+<div class="all-form">
+ <form action="/income" method="post">
+
+     <div class="all-form">
+         <label>Month:</label>
+        <input type="number" class="info" id="month" name="month" placeholder="Month 1-12" required>
+       </div>
+
+     <div class="all-form">
+     <label>Income:</label>
+     <input type="number" class="info" id= "income" name="income" placeholder="Monthly Income" required/>
+     </div>
+
+     <div class="all-form">
+     <button type="submit" class="info" id="Save" name="Save">Save</button>
+   </div>
+
+ </form>
+</div>
+
+{% endblock %}

@@ -1,0 +1,38 @@
+{% extends "index.html"%}
+
+{% block title %} Crypto {% endblock %}
+
+
+{% block content %}
+
+<div class="all-form">
+  <form action="/crypto" method="post">
+
+
+      <div class="all-form">
+      <label>Coin :</label>
+      <input type="text" class="info" id= "coin" name="coin" placeholder="Coin " required/>
+      </div>
+
+
+      <div class="all-form" >
+          <label>Qunatity:</label>
+         <input type="number" class="info" id="qunatity" name="qunatity" min="1" placeholder="Qunatity" required >
+        </div>
+
+        <div class="all-form">
+          <label>Amount:</label>
+         <input type="number" class="info" id="amount" name="amount"  min="1" placeholder="Amount" required step="0.01">
+        </div>
+
+      <div class="all-form">
+      <button type="submit" class="info" id="Save" name="Save">Buy</button>
+
+
+  </div>
+  </form>
+</div>
+
+
+
+{% endblock %}

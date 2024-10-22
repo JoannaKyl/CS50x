@@ -1,0 +1,128 @@
+.all-form {
+    margin-bottom: 20px;
+    grid-template-columns: 70px auto;
+    display: grid;
+    justify-content: center;
+    margin-left:-150px;
+}
+
+form-container{
+  margin-left: 100px;
+}
+
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+  }
+
+
+
+.alert{
+    color: white;
+    text-align: center;
+ }
+
+ .arranged_table{
+    position: absolute;
+    left: 0;
+    margin-left: 50px;
+ }
+
+
+ table {
+    width: 800%;
+    border-collapse: collapse;
+    text-align: right;
+    margin-bottom: 50px;
+
+  }
+
+  th, td {
+    padding: 30px;
+    text-align: left;
+    border-bottom: 1px solid #DDD;
+
+  }
+
+
+  tr:hover {background-color: lightblue;}
+
+ nav{
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 0px;
+ }
+
+ .flash
+ {
+  padding: 8px;
+   margin-top: -20px;
+   background-color: lightblue;
+   margin-bottom: 10px;
+}
+
+.flash-message {
+  color: black;
+  text-align: center;
+  text-decoration-style: solid ;
+  font-size: 15px;
+  font-weight: 900;
+
+}
+
+
+
+ select,input{
+  width: 180px;
+  height: 30px;
+  border-radius:5px;
+  border: 1px solid #ccc
+  }
+
+
+
+
+
+
+.dark_mode_theme,.dark_mode_theme all-form
+,.dark_mode_theme button ,
+.dark_mode_theme input,
+.dark_mode_theme .asset
+   {
+    background-color: black;
+    color: white;
+  }
+
+  .dark_mode_theme .flash-message,
+  .dark_mode_theme .flash,
+  .dark_mode_theme .dark,
+  .dark_mode_theme button
+  {
+    background-color: grey;
+    color: white;
+  }
+
+  .dark
+
+  {
+    width: 30px;
+    height: 30px;
+    border-radius:8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    margin-top: 8px;
+    margin-left: 5px;
+    background-color:white ;
+  }
+
+  body {
+
+    background-color: white;
+    color: black;
+
+  }
