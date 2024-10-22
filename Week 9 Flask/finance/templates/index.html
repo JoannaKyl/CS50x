@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+{% block main %}
+<table>
+    <thead>
+        <tr>
+            <th>Symbol</th>
+            <th>Shares</th>
+            <th>Price</th>
+            <th> Value of Stocks </th>
+
+        </tr>
+    </thead>
+    <tbody>
+        {% for money in monies %}
+        <tr>
+            <td>{{money.symbol }}</td>
+            <td>{{money.shares}}</td>
+            <th>{{money.price }}</th>
+            <td>{{money.stock_value|usd  }}</td>
+       
+
+        </tr>
+        {% endfor %}
+    </tbody>
+    <tr>
+        <th> Cash in Hand </th>
+        <th> Portfolio Total Asset </th>
+        <tbody>
+            {% for portfolio in portfolios %}
+            <tr>
+                <td>{{portfolio.cash_on_hand|usd}}</td>
+                <td>{{portfolio.total_asset|usd}}</td>
+                <td>{{portfolio.stock_value|usd}}</td>
+            </tr>
+            {% endfor %}
+    </tr>
+</table>
+{% endblock %}
