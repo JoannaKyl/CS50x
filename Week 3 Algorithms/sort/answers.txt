@@ -1,0 +1,11 @@
+sort1 uses:Bubble sort
+
+How do you know?: The test result in different test sizes, sort 1 recorded the second fastest in the best scenario(omega = n) and the second fast in the worst case(O = n^2).
+
+sort2 uses:Merge sort
+
+How do you know?: The test result in different test sizes,sort 2 recorded the fastest in all the worst scenario (O = (n log n)) best scenario (Omega = (n log n)).
+
+sort3 uses: Selection sort
+
+How do you know?:Sort 3 is the slowest in the best scenario and worst scenario.When sorting different sizes and in best and worst scenario,sort 3 takes longers time to sort the file.
