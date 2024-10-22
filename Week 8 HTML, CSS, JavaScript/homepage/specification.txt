@@ -1,0 +1,22 @@
+10 HTML tags:
+1.section
+2.hr
+3.h1
+4.ul
+5.img
+6.a
+7.nav
+8.p
+9.li
+10.em
+
+5 CSS properties
+1.gap
+2.display
+3.max-width
+4.height
+5.margin
+
+A brief (one-sentence) description of how you chose to use JavaScript and Bootstrap.
+- JavaScript Popup Box is shown when people click "Home" in the nav bar. The popup greets the user.
+- The site uses Bootstrap nav bar

@@ -1,0 +1,77 @@
+body {
+    background-image: url("https://www.pcma.org/wp-content/uploads/2018/11/Trendspotter-Event-Tech-Trend-Banner-818x460.jpg");
+    background-size: 2500px 1500px;
+
+}
+
+.text {
+    color: white;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    border-radius: 45px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 150px;
+}
+
+.grid-item {
+    border-radius: 45px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(0, 0, 0);
+    padding: 50px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.contacts {
+    width: 40px;
+    height: 40px;
+}
+
+
+
+.exp,
+.skill {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 40px 40px;
+}
+
+.exp img,
+.skill img {
+    width: 50%;
+    max-width: 350px;
+    height: 350;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+.exp::after,
+.skill::after {
+
+    width: 350px;
+}
+
+
+.intro {
+
+    border-radius: 45px;
+    font-size: 40px;
+    padding: 150px 150px;
+    width: auto;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid black;
+    margin: 0;
+    color: black;
+
+}
