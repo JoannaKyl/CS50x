@@ -13,8 +13,6 @@ int main()
     int sentecens = 0;
     int letters = 0;
 
-    // printf ("%d",text[3]);
-
     // claculate spaces
     for (int i = 0; i <= length; i++)
     {
