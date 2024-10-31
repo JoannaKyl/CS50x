@@ -6,7 +6,6 @@
 
 int main(int argc, string argv[])
 {
-
     if (argc != 2)
     {
         return 1;
@@ -25,7 +24,6 @@ int main(int argc, string argv[])
     {
         if (!isalpha(input[i]))
         {
-
             return 1;
         }
     }
