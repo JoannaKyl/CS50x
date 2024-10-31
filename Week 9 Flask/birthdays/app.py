@@ -26,7 +26,7 @@ def after_request(response):
 def index():
     if request.method == "POST":
 
-        # TODO: Add the user's entry into the database
+        # Add the user's entry into the database
         name = request.form.get("name")
         month = request.form.get("month")
         day = request.form.get("day")
@@ -52,6 +52,6 @@ def index():
         print(name, month, day)
         db.execute("INSERT INTO birthdays (name, month, day) VALUES(?, ?, ?)", name, month, day)
 
-    # TODO: Display the entries in the database on index.html
+    # Display the entries in the database on index.html
     rows = db.execute("Select * FROM birthdays")
     return render_template("index.html", birthdays=rows)
