@@ -65,7 +65,6 @@ int main(int argc, string argv[])
 // Update vote totals given a new vote
 bool vote(string name)
 {
-    // TODO
     for (int i = 0; i < candidate_count; i++)
     {
         if (strcmp(name, candidates[i].name) == 0)
@@ -80,18 +79,6 @@ bool vote(string name)
 // Print the winner (or winners) of the election
 void print_winner(void)
 {
-    //  1st for loop, find out the max vote
-    // for(int i = 0; i < candidate_count; i++) {
-    //     if(maxVote < candidate's vote)
-    //         set maxVot = candidate's vote
-    // }
-
-    // for(int i = 0; i < candieate_count; i++) {
-    //     if(maxVote == candidate's vote)
-    //         print the candidate's name
-    // }
-
-    // TODO
     int maxVote = 0;
     char *winner = 0;
     for (int i = 0; i <= candidate_count; i++)
