@@ -5,7 +5,6 @@
 
 int main(void)
 {
-
     string player1 = get_string("Player 1:");
     string player2 = get_string("Player 2:");
     int length1 = strlen(player1);
