@@ -25,6 +25,9 @@ $ ./filter -r ./images/stadium.bmp ./images/stadium-reflected.bmp
 $ ./filter -b ./images/tower.bmp ./images/tower-blurred.bmp            
 $ ./filter -e ./images/yard.bmp ./images/yard-edges.bmp                
 ```
-   
+
 ## Credit
-This project is part of Harvard's CS50x course. For more details, visit: [CS50 Filter Problem page](https://cs50.harvard.edu/x/2024/psets/4/filter/more/)
+
+This project was developed as part of Harvard University's CS50x course. For more details, visit: [CS50 Filter Problem page](https://cs50.harvard.edu/x/2024/psets/4/filter/more/)
+
+**Note:** This repository contains my personal projects and files from Harvard University's CS50x course. If you’re currently enrolled, please respect academic integrity and complete assignments independently.
