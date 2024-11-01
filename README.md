@@ -38,7 +38,7 @@ Each week’s assignments are designed to deepen understanding and improve probl
 - **Week 8 - HTML, CSS, JavaScript:** Create web interfaces with projects such as "Trivia" and "Homepage."
 - **Week 9 - Flask:** Link web applications with databases through projects like "Finance."
 - **Week 10 - Cybersecurity:** Explore secure coding practices, data encryption techniques, and foundational cybersecurity principles.
-- **Final Project:** Showcase the skills you’ve built by developing an original, fully realized application.
+- **Final Project:** Showcase the skills that built by developing an original, fully realized application.
 
 ## My Final Projects
 
