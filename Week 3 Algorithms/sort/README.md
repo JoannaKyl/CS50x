@@ -30,4 +30,7 @@ The necessaryfiles can downloaded in the following link:
 [CS50 Sort Problem Distribution](https://cs50.harvard.edu/x/2024/psets/3/sort/)
 
 ## Credit
-For additional information and resources, refer to the official [CS50 Sort Problem page](https://cs50.harvard.edu/x/2024/psets/3/sort/).
+
+This project was developed as part of Harvard University's CS50x course. For more details, visit:  [CS50 Sort Problem page](https://cs50.harvard.edu/x/2024/psets/3/sort/).
+
+**Note:** This repository contains my personal projects and files from Harvard University's CS50x course. If you’re currently enrolled, please respect academic integrity and complete assignments independently.
