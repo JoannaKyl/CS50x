@@ -36,3 +36,4 @@ ciphertext: Ehbbq!
 
 This project is part of Harvard's CS50x course. For more details, visit: [CS50 Substitution Problem Set](https://cs50.harvard.edu/x/2024/psets/2/substitution/).
 
+**Note:** This repository contains my personal projects and files from Harvard University's CS50x course. If you’re currently enrolled, please respect academic integrity and complete assignments independently.
