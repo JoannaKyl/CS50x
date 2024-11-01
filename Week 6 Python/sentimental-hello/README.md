@@ -22,3 +22,5 @@ This week will started by recreating the following foundational programs from We
 
 ## Credit
 This project was developed as part of Harvard University's CS50x course. For more information, you can visit the official project page: [Week 6 Python](https://cs50.harvard.edu/x/2024/weeks/6/).
+
+**Note:** This repository contains my personal projects and files from Harvard University's CS50x course. If you’re currently enrolled, please respect academic integrity and complete assignments independently.
