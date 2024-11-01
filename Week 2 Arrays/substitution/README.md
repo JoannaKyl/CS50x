@@ -2,7 +2,8 @@
 
 ## Problem to Solve
 In a substitution cipher, we encrypt messages by replacing letters according to a key. For example, with the key:
- ```Key:   N Q X P O M A F T R H L Z G E C Y J I U W S K D V B
+```
+Key:       N Q X P O M A F T R H L Z G E C Y J I U W S K D V B
 Alphabet:  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
 ```
 "HELLO" can encrypted as "FOLLE".
