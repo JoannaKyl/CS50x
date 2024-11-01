@@ -1,84 +1,73 @@
 # CoinStock
 
-CoinStock is a web page application for individuals quote the price of crypto and stock and to record their portfolio including stock,crypto,income and saving.
+CoinStock is a web application that allows individuals to quote the prices of cryptocurrencies and stocks, as well as to record their portfolios, including stocks, cryptocurrencies, income, and savings.
 
 ## Demo
 
-Please visit: https://youtu.be/EXDXoUhw4uk
-
+Please visit: [Demo Video](https://youtu.be/EXDXoUhw4uk)
 
 ## Description
 
-1. Main Function:
-   1. Register & Login function
-        1. Register
-            * Before access the function of the website,all user must be registered with coinstock.
-                - Email will be used as user name and each email only allow to register one account.
-                - Email and hased password will insert into users table.
-        2. Login
-            * In the login page user are required to input their email and user name.
-                - The system will check whether the email match the data in the database
-                - ```check_password_hash()``` will be adopted to check whether inputted password is the same with hashed password (hash)
-                -Login is required for access for ```Income``` ,```Saving``` , ```Quote``` , ```Stock```, ```Crypto``` and ```Portfolio```
+1. **Main Functions:**
+   1. **Register & Login Functions:**
+        1. **Register:**
+            * Before accessing the functions of the website, all users must register with CoinStock.
+                - The email will be used as the username, and each email is allowed to register only one account.
+                - The email and hashed password will be inserted into the users table.
+        2. **Login:**
+            * On the login page, users are required to input their email and password.
+                - The system will check whether the email matches the data in the database.
+                - The function `check_password_hash()` will be used to verify whether the inputted password matches the hashed password.
+                - Login is required to access the **Income**, **Saving**, **Quote**, **Stock**, **Crypto**, and **Portfolio** functions.
 
-   2. Allow users to record monthly saving and income
-        * After login the account , inputted saving and income details will be inserted in the database based on the ```session["user_id"]```
+   2. **Record Monthly Savings and Income:**
+        * After logging into their accounts, users can input their savings and income details, which will be inserted into the database based on `session["user_id"]`.
 
-   3. Allow users to qoute current price of stock & cryptocurrency
-
-        * Libraries of yahoo-finance and cryptocompare need to be installed for this function.
-          The function of  ```stock_quote``` and ```crypto_quote``` are in ```investment_data.py```
-          ,which was imported in ```app.py```
-            ```
+   3. **Quote Current Prices of Stocks & Cryptocurrencies:**
+        * The libraries `yahoo-finance` and `cryptocompare` need to be installed for this function. The functions `stock_quote` and `crypto_quote` are defined in `investment_data.py`, which is imported in `app.py`.
+            ```bash
             pip install yfinance
-
             ```
-            ```
+            ```bash
             pip install cryptocompare
             ```
 
+   4. **Track Portfolio:**
+        * Based on `session["user_id"]`, users' savings, coins, and stock data will be displayed in `portfolio.html`.
 
-   4. Allow users to track their portfolio
-        *Based on ```session[user_id]``` ,user's ``` saving``` ,``` coin``` and ``` stock``` data will be displayed in ``` portfolio.html```
+   5. **Logout:**
+        * The logout function will be implemented using `session.clear()`.
 
-   5. Logout
-        * Logout function will be implement by ``` session.clear()```
+   6. **Dark Mode:**
+        * JavaScript is used to change the background color and font color when the `dark_mode_theme` button is clicked. This sets the dark mode on, and `localStorage` will be used to remember the dark mode preference.
 
-    6. Dark Mode
-        *Using Javascript to change the background color and font color when the ```dark_mode_them``` button is clicked which set the dark mode on , and ```localStorage``` will be saved for the dark mode
-
-2. Database:Coinstock.db
-     - In order to different needs of the Coinstock,there are 5 tables in ```coinstock.db``` file:
-        1. User
-
-            ```
+2. **Database: CoinStock.db**
+     - To meet the different needs of CoinStock, there are five tables in the `coinstock.db` file:
+        1. **User:**
+            ```sql
             users (id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, email TEXT NOT NULL, hash TEXT NOT NULL);
             ```
 
-        2. Saving
+        2. **Saving:**
+            ```sql
+            saving (id INTEGER PRIMARY KEY AUTOINCREMENT, month INTEGER NOT NULL, saving INTEGER NOT NULL, user_id INTEGER NOT NULL, FOREIGN KEY (user_id) REFERENCES users(id));
             ```
-            saving ( id INTEGER PRIMARY KEY AUTOINCREMENT, month INTEGER NOT NULL, saving INTEGER NOT NULL, user_id INTEGER NOT NULL, FOREIGN KEY (user_id) REFERENCES users(id) );
-            ```
-             - user_id is a FOREIGN KEY from ```id``` of users table
+            - `user_id` is a FOREIGN KEY from the `id` of the users table.
 
-        3. Income
+        3. **Income:**
+            ```sql
+            income (id INTEGER PRIMARY KEY AUTOINCREMENT, month INTEGER NOT NULL, income INTEGER NOT NULL, user_id INTEGER NOT NULL, FOREIGN KEY (user_id) REFERENCES users(id));
             ```
-            income( id INTEGER PRIMARY KEY AUTOINCREMENT, month INTERGER NOT NULL, income INTERGER NOT NULL, user_id INTERGER NOT NULL, FOREIGN KEY (user_id) REFERENCES users(id) );
+            - `user_id` is a FOREIGN KEY from the `id` of the users table.
+
+        4. **Coin:**
+            ```sql
+            coin (id INTEGER PRIMARY KEY AUTOINCREMENT, Coin_symbol TEXT NOT NULL, quantities INTEGER NOT NULL, price INTEGER NOT NULL, timestamp DATETIME DEFAULT CURRENT_TIMESTAMP, user_id INTEGER NOT NULL, amount INTEGER NOT NULL, FOREIGN KEY (user_id) REFERENCES users(id));
             ```
-            - user_id is a FOREIGN KEY from ```id``` of users table
-            -
+            - `user_id` is a FOREIGN KEY from the `id` of the users table.
 
-        4. Coin
-             ```
-            coin( id INTEGER PRIMARY KEY AUTOINCREMENT, Coin_symbol TEXT NOT NULL, quantities INTERGER NOT NULL, price INTERGER NOT NULL, timestamp DATETIME DEFAULT CURRENT_TIMESTAMP, user_id INTERGER NOT NULL, amount INTERGER NOT NULL, FOREIGN KEY (user_id) REFERENCES users(id) );
+        5. **Stock:**
+            ```sql
+            stock (id INTEGER PRIMARY KEY AUTOINCREMENT, symbol TEXT NOT NULL, shares INTEGER NOT NULL, price INTEGER NOT NULL, timestamp DATETIME DEFAULT CURRENT_TIMESTAMP, user_id INTEGER NOT NULL, amount INTEGER NOT NULL, FOREIGN KEY (user_id) REFERENCES users(id));
             ```
-            -  user_id is a FOREIGN KEY from ```id``` of users table
-
-        5. Stock
-            ```
-            stock( id INTEGER PRIMARY KEY AUTOINCREMENT, symbol TEXT NOT NULL, shares INTERGER NOT NULL, price INTERGER NOT NULL, timestamp DATETIME DEFAULT CURRENT_TIMESTAMP, user_id INTERGER NOT NULL, amount INTERGER NOT NULL, FOREIGN KEY (user_id) REFERENCES users(id) );
-            ```
-             - user_id is a FOREIGN KEY from ```id ``` of users table
-
-
-
+            - `user_id` is a FOREIGN KEY from the `id` of the users table.
