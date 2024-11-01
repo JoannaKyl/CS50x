@@ -40,7 +40,7 @@ Each week’s assignments are designed to deepen understanding and improve probl
 - **Week 10 - Cybersecurity:** Explore secure coding practices, data encryption techniques, and foundational cybersecurity principles.
 - **Final Project:** Showcase the skills you’ve built by developing an original, fully realized application.
 
-## My Personal Projects
+## My Final Projects
 
 ### CoinStock
 
@@ -53,7 +53,7 @@ Through this course, I have achieved:
 - A **solid understanding of programming fundamentals** in languages such as C, Python, SQL, HTML, CSS, and JavaScript.
 - The **ability to think algorithmically** and solve complex problems efficiently.
 - **Experience with key concepts** including algorithm, data structures, memory management, cybersecurity basics, software engineering , and web development.
-- **Project-based learning:** Applying theoretical knowledge to real-world inspired projects, from finance simulators to personal blogs.
+- **Project-based learning:** Applying theoretical knowledge to real-world inspired projects.
 
 ## Useful Resources
 
@@ -71,7 +71,7 @@ Through this course, I have achieved:
 
 ## Acknowledgments
 
-Special thanks to **Professor David J. Malan** and the CS50 team for creating a dynamic, engaging, and inclusive learning environment. Their dedication makes computer science accessible and enjoyable for learners from all backgrounds.
+Special thanks to **Professor David J. Malan** and the CS50 team for creating a dynamic and engaging learning environment. This courses makes computer science accessible and enjoyable for learners from all backgrounds.
 
 **Note:** This repository contains my personal projects and files from Harvard University's CS50x course. If you’re currently enrolled, please respect academic integrity and complete assignments independently.
 
