@@ -23,3 +23,9 @@ In this assignment, we’ll recreate the classic Super Mario Brothers pyramid st
  ##  ##
 ###  ###
 ```
+
+## Credit
+
+This project was developed as part of Harvard University's CS50x course. For more information, you can visit the official project page: [CS50 Mario Problem Set](https://cs50.harvard.edu/x/2024/psets/1/mario/more/).
+
+**Note:** This repository contains my personal projects and files from Harvard University's CS50x course. If you’re currently enrolled, please respect academic integrity and complete assignments independently.
