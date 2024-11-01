@@ -20,6 +20,9 @@ The program reads the forensic image in blocks of 512 bytes, looking for JPEG si
 ```
 ./recover card.raw
 ```
- 
+
 ## Credit
-This project was developed as part of Harvard University's CS50x course. For more information, you can visit the official project page: [CS50 Recover Problem Set](https://cs50.harvard.edu/x/2024/psets/4/recover/).
+
+This project was developed as part of Harvard University's CS50x course. For more details, visit:  [CS50 Recover Problem Set](https://cs50.harvard.edu/x/2024/psets/4/recover/).
+
+**Note:** This repository contains my personal projects and files from Harvard University's CS50x course. If you’re currently enrolled, please respect academic integrity and complete assignments independently.
