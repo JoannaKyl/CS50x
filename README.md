@@ -47,7 +47,8 @@ Each week’s assignments are designed to deepen understanding and improve probl
 **CoinStock** is a web application that allows individuals to quote the prices of cryptocurrencies and stocks, as well as to record their portfolios, including stocks, cryptocurrencies, income, and savings. This project applies the knowledge I gained from the course, including Python, database management, and JavaScript.
 
 ## My Views and Gains
-
+Taking CS50 as my first programming course has been amazing! The course breaks down complex concepts into manageable steps, making programming accessible and fun. 
+I’m fascinated by the logic behind coding, and every challenge feels like solving a puzzle. I never imagined learning to code could be so rewarding!
 Through this course, I have achieved:
 
 - A **solid understanding of programming fundamentals** in languages such as C, Python, SQL, HTML, CSS, and JavaScript.
